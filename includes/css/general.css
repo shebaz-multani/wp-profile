@@ -1,0 +1,148 @@
+.wp-profile-main {
+	display: block;
+	width: 100%;
+	height: fit-content;
+}
+
+.wp-profile-main.loading {
+	opacity: 0.5; 
+	pointer-events: none;
+}
+
+.wp-profile-main .form-row {
+	display: flex;
+
+}
+.wp-profile-main .form-row .form-group {
+	width: 50%;
+}
+.wp-profile-main .form-group {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+.wp-profile-main .form-group label {
+	padding: 10px;
+}
+.wp-profile-main .form-control {
+	width: 100%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.wp-profile-main .form-control[type="range"] {
+	padding: 0;
+}
+.wp-profile-main .submit-button {
+	text-align: center;
+}
+
+.wp-profile-main .hide {
+  display: none;
+}
+
+.wp-profile-main .clear {
+  float: none;
+  clear: both;
+}
+
+.wp-profile-main .rating,
+.wp-profile-main .rating-show
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.wp-profile-main .rating > label,
+.wp-profile-main .rating-show > label
+{
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+    font-size: 32px;
+}
+
+.wp-profile-main .rating > label:hover,
+.wp-profile-main .rating > label:hover ~ label,
+.wp-profile-main .rating-show > label.checked,
+.wp-profile-main .rating-show > label.checked ~ label,
+.wp-profile-main .rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.wp-profile-main .rating > label:hover:before,
+.wp-profile-main .rating > label:hover ~ label:before,
+.wp-profile-main .rating-show > label.checked:before,
+.wp-profile-main .rating-show > label.checked ~ label:before,
+.wp-profile-main .rating > input.radio-btn:checked ~ label:before,
+.wp-profile-main .rating > input.radio-btn:checked ~ label:before
+{
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+.wp-profile-main .wp-profile-listing {
+	margin: 10px;
+}
+
+.wp-profile-main .no-records-found {
+	text-align: center;
+}
+.wp-profile-main .no-records-found p {
+	margin: 0;
+}
+
+.wp-profile-listing .ASC:after,
+.wp-profile-listing .DESC:after {
+	content: ' ';
+	position: relative;
+	left: 2px;
+	border: 8px solid transparent;
+}
+
+.wp-profile-listing .ASC:after {
+	top: 18px;
+	border-top-color: silver;
+}
+
+.wp-profile-listing .DESC:after {
+	bottom: 15px;
+	border-bottom-color: silver;
+}
+
+.wp-profile-listing .ASC,
+.wp-profile-listing .DESC {
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.wp-profile-pagination {
+	margin: 20px 0;
+    text-align: center;
+}
+
+.wp-profile-pagination a,
+.wp-profile-pagination span {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+}
+.wp-profile-pagination a:hover, 
+.wp-profile-pagination span {
+	background-color: #000;
+	color: #fff;
+}
