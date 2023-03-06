@@ -66,7 +66,7 @@
 
 	//Reset pagination and order field value
 	$('.wp-profile-filter-frm .form-control').on('input change', function () {
-		$('.wp-profile-filter-frm input[name="order"]').val('DESC');
+		$('.wp-profile-filter-frm input[name="order"]').val('ASC');
 		$('.wp-profile-filter-frm input[name="paged"]').val('1');
 	});
 

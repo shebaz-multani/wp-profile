@@ -14,6 +14,8 @@ if ( ! isset($profiles) ) {
 	$profiles = new WP_Query([
 		'post_type' 	 => 'wp-profiles',
 		'paged' 		 => 1,
+		'orderby' 		 => 'title',
+		'order' 		 => 'ASC',
 		'posts_per_page' => $posts_per_page,
 	]);
 }

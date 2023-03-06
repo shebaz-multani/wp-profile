@@ -103,7 +103,7 @@ $education = get_terms([
 		<div class="submit-button">
 			<?php wp_nonce_field( 'wpprofile_ajax_filter', 'wpprofile_ajax_filter_nonce' ); ?>
 			<input type="hidden" name="action" value="wpprofile_ajax_filter">
-			<input type="hidden" name="order" value="DESC">
+			<input type="hidden" name="order" value="ASC">
 			<input type="hidden" name="paged" value="1">
 			<button type="submit" ><?php _e( 'Search', 'wp-profile' ); ?></button>
 		</div>

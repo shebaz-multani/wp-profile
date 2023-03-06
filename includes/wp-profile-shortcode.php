@@ -87,11 +87,12 @@ class WPProfileShortcode
 			$order = ( isset( $_POST['order'] ) && $_POST['order'] === 'ASC' ) ? 'ASC' : 'DESC';
 			
 			$args = [
-				'post_type' 	  => 'wp-profiles',
-				'paged' 		  => $paged,
-				'posts_per_page'  => $posts_per_page,
-				'order' 		  => $order,
-				'suppress_filters' =>true
+				'post_type' 	   => 'wp-profiles',
+				'paged' 		   => $paged,
+				'posts_per_page'   => $posts_per_page,
+				'order' 		   => $order,
+				'orderby' 		   => 'title',
+				'suppress_filters' => true,
 			];
 
 			if ( isset( $_POST[ 'keyword' ] ) && ! empty( $_POST['keyword'] ) ) {
