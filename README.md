@@ -1,6 +1,6 @@
 === wp Profile ===
-Contributors: itpathsolutions, shebaz, panchalhimani711
-Tags: blocks, gutenberg, post, custom, cpt, list, grid, section
+Contributors: shebaz
+Tags: prodile, profile listing, profile search and filter
 Requires at least: 5.4 or higher
 Tested up to: 6.1.1
 Requires PHP: 5.4 or higher
